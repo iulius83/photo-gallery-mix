@@ -1,0 +1,75 @@
+header {
+    margin: 0;
+    text-align: center;
+    color: aliceblue;
+    height:90vh;
+    background:url(http://juliusanghelina.ro/wp-content/uploads/2018/03/JUL9213-2.jpg) bottom center no-repeat;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+nav {
+    margin: 0;
+    background:black;
+    top:0;
+    width: 100%;
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+
+.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display:flex;
+}
+
+nav li {
+    position: inherit;
+    flex:1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+li.logo {
+    max-width:0;
+    overflow: hidden;
+    background: white;
+    transition: all 1s;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.fixed-nav li.logo {
+    max-width: 500px;
+}
+
+li.logo a {
+    color:black;
+}
+
+nav a {
+    text-decoration: none;
+    padding:20px;
+    display: inline-block;
+    color:white;
+    transition:all 1s;
+    /* text-transform: uppercase; */
+    width: 12rem;
+}
+nav a:hover {
+    background: white;
+    color: black;
+}
+  
